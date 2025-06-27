@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, BarChart3, User } from 'lucide-react';
+import { FileText, BarChart3, User, Home } from 'lucide-react';
 
 export const Header: React.FC = () => {
   return (
@@ -17,6 +17,10 @@ export const Header: React.FC = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-6">
+             <a href="#" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+              <Home className="h-4 w-4" />
+              <span className="text-sm font-medium">Home</span>
+            </a>
             <a href="#" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
               <BarChart3 className="h-4 w-4" />
               <span className="text-sm font-medium">Analytics</span>
